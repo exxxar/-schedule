@@ -1,0 +1,242 @@
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px; }
+
+::-webkit-scrollbar-track {
+  border-radius: 0px; }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0px;
+  background: transparent; }
+
+::-webkit-scrollbar-thumb:hover {
+  background: #A6855F;
+  cursor: pointer; }
+
+*:focus {
+  outline: none; }
+
+.wrapper {
+  width: 600px;
+  height: 600px;
+  background: #beebff;
+  border-radius: 10px;
+  position: relative;
+  margin: 20px auto;
+  box-sizing: border-box;
+  padding: 50px;
+  overflow-y: scroll; }
+
+.component {
+  display: table-cell;
+  vertical-align: middle;
+  height: 500px;
+  width: 500px;
+  overflow: hidden; }
+  .component .component_head {
+    width: 350px;
+    height: 165px;
+    background: #03A9F4;
+    margin: auto; }
+    .component .component_head .component_title {
+      width: 100%;
+      height: 50px;
+      background: #B28A67; }
+      .component .component_head .component_title > div {
+        float: left;
+        height: 100%;
+        box-sizing: border-box;
+        padding: 10px; }
+        .component .component_head .component_title > div > div {
+          width: 31px;
+          height: 100%;
+          display: inline-block;
+          float: left; }
+          .component .component_head .component_title > div > div a {
+            display: inline-block;
+            font-size: 24pt;
+            text-decoration: none;
+            color: white; }
+        .component .component_head .component_title > div p {
+          font-size: 10pt;
+          font-family: 'Arial';
+          text-align: center;
+          margin-top: 10px;
+          font-size: 12pt;
+          color: white; }
+      .component .component_head .component_title > div:nth-child(1) {
+        width: 140px; }
+      .component .component_head .component_title > div:nth-child(2) {
+        background: #77B97C;
+        width: 105px;
+        cursor: pointer; }
+        .component .component_head .component_title > div:nth-child(2):hover {
+          background: #90D295; }
+      .component .component_head .component_title > div:nth-child(3) {
+        background: #DAB565;
+        width: 105px; }
+    .component .component_head .component_main .group {
+      width: 100%;
+      height: 55px;
+      padding: 5px;
+      box-sizing: border-box; }
+      .component .component_head .component_main .group > * {
+        float: left;
+        font-size: 10pt; }
+      .component .component_head .component_main .group input[type="search"] {
+        padding: 17px;
+        width: 270px;
+        border: none; }
+      .component .component_head .component_main .group button {
+        padding: 10px 20px 10px 20px;
+        font-size: 18pt;
+        border: none;
+        margin-left: 5px;
+        color: white;
+        background: #A6855F;
+        cursor: pointer; }
+        .component .component_head .component_main .group button:hover {
+          background: #dab565; }
+      .component .component_head .component_main .group select {
+        margin-right: 5px;
+        border: none; }
+      .component .component_head .component_main .group select[name="study_course"] {
+        width: 100px;
+        height: 50px;
+        box-sizing: border-box;
+        padding: 12px 10px 12px 10px; }
+      .component .component_head .component_main .group select[name="study_group"] {
+        width: 100px;
+        height: 50px;
+        box-sizing: border-box;
+        padding: 12px 10px 12px 10px; }
+      .component .component_head .component_main .group select[name="study_day"] {
+        width: 128px;
+        height: 50px;
+        box-sizing: border-box;
+        padding: 12px 10px 12px 10px;
+        margin-right: 0; }
+  .component .component_body {
+    width: 450px;
+    height: 300px;
+    background: white;
+    margin: auto;
+    margin-top: 10px;
+    box-sizing: border-box;
+    padding: 20px; }
+    .component .component_body ul {
+      overflow-y: scroll;
+      width: 100%;
+      height: 100%; }
+      .component .component_body ul li {
+        width: 98.5%;
+        margin-bottom: 5px;
+        margin-left: 5px;
+        height: 70px;
+        background: #AE8D64 url("bg.png") fixed center;
+        position: relative;
+        cursor: pointer; }
+        .component .component_body ul li:last-child {
+          margin-bottom: 0px; }
+        .component .component_body ul li > div {
+          display: table-cell;
+          vertical-align: middle;
+          height: 70px;
+          width: 125px; }
+          .component .component_body ul li > div p {
+            width: 100%;
+            text-align: center;
+            color: white; }
+          .component .component_body ul li > div p.small {
+            font-size: 8pt;
+            font-style: italic; }
+          .component .component_body ul li > div:hover {
+            background: #B1936E url("bg.png") fixed center; }
+        .component .component_body ul li:after {
+          content: attr(auditory);
+          position: absolute;
+          right: -35px;
+          top: 20px;
+          z-index: 10;
+          width: 70px;
+          height: 15px;
+          transform-origin: bottom;
+          transform: rotate(-90deg);
+          font-size: 8pt;
+          text-align: center;
+          background: #52AC62;
+          line-height: 150%;
+          color: white; }
+  .component .component_settings {
+    width: 450px;
+    height: 300px;
+    background: white;
+    margin: auto;
+    margin-top: 10px;
+    box-sizing: border-box;
+    padding: 20px;
+    position: relative; }
+    .component .component_settings .component_settings_close {
+      position: absolute;
+      z-index: 100;
+      top: 0px;
+      right: 0px;
+      width: 40px;
+      height: 40px;
+      padding: 0px 5px;
+      box-sizing: border-box; }
+      .component .component_settings .component_settings_close a {
+        font-size: 28pt;
+        color: #a6855f;
+        text-decoration: none; }
+    .component .component_settings .title {
+      width: 100%;
+      height: 30px;
+      border-bottom: 1px #b28a67 solid; }
+      .component .component_settings .title h1 {
+        text-align: left;
+        font-size: 18pt;
+        font-family: 'Arial';
+        color: #b28a67; }
+    .component .component_settings .settings {
+      overflow-y: scroll;
+      width: 100%;
+      height: 230px; }
+      .component .component_settings .settings .element {
+        width: 99.9%;
+        position: relative;
+        margin-bottom: 5px;
+        box-sizing: border-box;
+        padding: 10px;
+        color: #b28a67;
+        font-family: 'Arial'; }
+        .component .component_settings .settings .element > * {
+          position: relative;
+          width: 100%; }
+        .component .component_settings .settings .element select {
+          padding: 10px;
+          border-radius: 6px; }
+        .component .component_settings .settings .element label {
+          font-style: italic;
+          line-height: 150%; }
+        .component .component_settings .settings .element:last-child {
+          margin-bottom: 0px; }
+  .component .hidden {
+    display: none; }
+  .component .settings_btn {
+    width: 50px;
+    height: 50px;
+    right: 10px;
+    top: 10px;
+    position: absolute;
+    z-index: 20;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 20pt; }
+    .component .settings_btn a {
+      text-decoration: none;
+      color: white; }
+      .component .settings_btn a:hover {
+        color: lightcyan; }
+
+/*# sourceMappingURL=style.css.map */
